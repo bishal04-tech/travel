@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+
+@layer base {
+  html {
+    font-family: 'Poppins', sans-serif;
+   
+  }
+
+  body{
+    background-color:#fdfeff;
+    overflow-x: hidden;
+    
+  }
+} 
+
+@layer components {
+  
+  .input-box{
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    padding: 0 20px;
+    border: 1px solid #d1d5db; /* Tailwind's gray-300 */
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    
+  }
+  .input-box:focus {
+    border-color: #05B6D3; /* Primary color */
+    box-shadow: 0 0 0 2px rgba(5, 182, 211, 0.2); /* Light shadow for focus */
+  }
+
+  .btn-primary {
+  background-color: #05B6D3; /* Primary color */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #04a0b8;
+   /* Darker shade for hover */
+}
+.btn-light{
+  background-color: white;
+  color: #05B6D3; /* Primary color */
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #05B6D3; /* Primary color */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+}
+.btn-light:hover {
+  background-color: white; /* Light shade for hover */
+  color: #04a0b8; /* Darker shade for hover */
+  border-color: #04a0b8; /* Darker shade for hover */
+  box-shadow: 0 0 0 2px rgba(5, 182, 211, 0.2); /* Light shadow for hover */
+}
+
+  .login-ui-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/images/login-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Ensure it stays behind other content */
+  }
+
+  .modal-box {
+  width: 80vw;
+  height: 80vh;
+  max-width: 80vw; /* stop child from growing wider */
+  max-height: 80vh;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3.5rem;
+  padding: 1.25rem;
+  overflow-x: auto; /* allow horizontal scroll */
+  overflow-y: auto; /* allow vertical scroll */
+  scrollbar-width: thin;
+  scrollbar-color: #057c8e transparent;
+  z-index: 50;
+}
+
+.modal-box img {
+  display: block;
+  max-width: unset; /* don’t force it to shrink */
+}
+
+.modal-box::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.modal-box::-webkit-scrollbar-track {
+  background: transparent;
+}
+.modal-box::-webkit-scrollbar-thumb {
+  background-color: #057c8e;
+  border-radius: 9999px;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+.modal-box::-webkit-scrollbar-thumb:hover {
+  background-color: #045f6b;
+}
+.modal-box::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+  
+  .icon-btn {
+  font-size: 22px;
+  color: #cbd5e1;      /* Tailwind’s slate-300 */
+  cursor: pointer;
+  transition: color 0.2s; /* optional, for smooth hover */
+}
+
+.icon-btn:hover {
+  color: #ef4444 !important;      /* Tailwind’s red-500 */
+}
+.input-label{
+  font-size: 0.75rem;          /* Tailwind text-xs (≈12px) */
+  line-height: 1rem;           /* optional — matches Tailwind's text-xs leading */
+  color: var(--slate-400, #94a3b8); /* Tailwind text-slate-400 (fallback hex) */
+  font-weight: 400;
+}
+.btn-small{
+  display: flex;
+  align-items: center;          /* items-center */
+  gap: 0.25rem;                 /* gap-1 */
+  font-size: 0.75rem;           /* text-xs */
+  font-weight: 500;             /* font-medium */
+  background-color: #ecfeff;    /* bg-cyan-50 (approx Tailwind) */
+  color: #05B6D3;               /* text-[#05B6D3] */
+  box-shadow: none;             /* shadow-cyan-100/0 -> effectively none */
+  border: 1px solid #cffafe;    /* border-cyan-100 */
+  border-radius: 0.375rem;      /* rounded (Tailwind rounded -> 0.375rem) */
+  padding-left: 0.75rem;        /* px-3 */
+  padding-right: 0.75rem;       /* px-3 */
+  padding-top: 3px;             /* py-[3px] */
+  padding-bottom: 3px;          /* py-[3px] */
+  transition: background-color .15s ease, color .15s ease;
+}
+.btn-small:hover{
+   background-color: var(--primary, #0586D3); /* hover:bg-primary: use --primary or fallback */
+  color: #ffffff;
+}
+.btn-delete {
+  /* bg-rose-50 */
+  --rose-50: #fff1f2;      /* fallback */
+  background-color: var(--rose-50);
+
+  /* text-rose-500 */
+  --rose-500: #f43f5e;     /* fallback */
+  color: var(--rose-500);
+
+  /* shadow-rose-100/0 -> transparent shadow (no visible shadow) */
+  /* if you want no shadow, keep none; otherwise adjust opacity */
+  box-shadow: 0 1px 2px rgba(244,63,94,0); /* effectively none */
+
+  /* border + border-rose-100 */
+  --rose-100: #ffe4e6;     /* fallback */
+  border: 1px solid var(--rose-100);
+
+  /* layout / shape (Tailwind doesn't include these in your snippet,
+     but typical button styles) */
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;            /* optional: match gap-1 */
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;  /* adjust to match your design */
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color .15s ease, color .15s ease;
+}
+
+/* hover:bg-rose-500 hover:text-white */
+.btn-delete:hover {
+  background-color: var(--rose-500);
+  color: #ffffff;
+}
+
+/* focus state (recommended for accessibility) */
+.btn-delete:focus {
+  outline: 2px solid rgba(244,63,94,0.15);
+  outline-offset: 2px;
+}
+
+
+}

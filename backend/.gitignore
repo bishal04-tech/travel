@@ -1,0 +1,69 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Logs
+logs/
+*.log
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Build / output
+dist/
+build/
+lib/
+
+# Environment files (commit .env.example only)
+.env
+.env.*.local
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# Testing / coverage
+coverage/
+.nyc_output/
+jest-debug.log
+
+# Dependency directories for other package managers (if used)
+.eslintcache
+.cache/
+.parcel-cache/
+
+# Vercel / platform / local dev
+.vercel/
+.now/
+server/.cache/
+
+# Multer / file uploads (don’t commit uploaded images)
+uploads/
+public/uploads/
+tmp/
+temp/
+media/
+
+# Secrets / credentials
+*.pem
+*.key
+serviceAccount*.json
+credentials.json
+*.p12
+
+# Docker
+docker-compose.override.yml
+*.env.docker
+
+# Others
+*.tgz
+*.log.*
