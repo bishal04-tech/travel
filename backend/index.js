@@ -7,12 +7,7 @@ const path = require('path');
 const app = express();
 app.use(express.json());
 app.use(cors());
-// console.log("👀 Static folder is:", path.join(__dirname, 'uploads'));
-app.use(
-  "/uploads",
-  express.static(path.join(__dirname, "../uploads"))
-);
-
+  const PORT=process.env.PORT || 3000;
 // Import routes
 const authRoutes = require('./routes/auth.routes');
 const loginRoutes = require('./routes/login.routes');
@@ -63,6 +58,6 @@ app.use('/assets', express.static(path.join(__dirname, 'assets')));
 app.get('/', (req, res) => res.send('Welcome to the Travel API!'));
 app.post('/api/test', (req, res) => res.json({ message: 'Test API is working!' }));
 
-app.listen(3000, () => console.log('Server is running on port 3000'));
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
 
 module.exports = app;
