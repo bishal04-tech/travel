@@ -3,7 +3,7 @@ TRAVEL STORIES APP
 A simple Travel Stories web application — React frontend + Node/Express backend + MongoDB.
 Users can register/login, create travel stories with images, search & filter stories, and mark favourites. Images are uploaded and served from /uploads.
 
-FEATURES
+__FEATURES__
 
 User registration & login
 
@@ -17,7 +17,7 @@ Mark stories as favourite
 
 Static assets served from /assets
 
-Tech Stack
+__TECH STACK__
 
 Frontend: React 
 
@@ -29,15 +29,7 @@ Image storage: local /uploads and/or Cloudinary
 
 Authentication: JWT 
 
-Quick links
-
-Server entry: index.js (root)
-
-Routes: routes/ (listed below)
-
-Static folders: /uploads, /assets
-
-Environment Variables
+__Environment Variables__
 
 Created a .env file in the project root. Common variables used by the project :
 
@@ -48,7 +40,7 @@ CLOUDINARY_CLOUD_NAME=...
 CLOUDINARY_API_KEY=...
 CLOUDINARY_API_SECRET=...
 
-API Routes 
+__API ROUTES__ 
 
 These endpoints reflect how routes are mounted in index.js
 
@@ -99,7 +91,7 @@ GET /travel-stories/filter
 Filter stories (use query params). (routes/filterStory.routes.js)
 
 
-PROJECT FOLDER STRUCTURE
+__PROJECT FOLDER STRUCTURE__
 
 ```travel/
 ├── backend/ 
