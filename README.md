@@ -101,7 +101,7 @@ Filter stories (use query params). (routes/filterStory.routes.js)
 
 PROJECT FOLDER STRUCTURE
 
-travel/
+```travel/
 ├── backend/ # server-side (Node/Express)
 │   ├── controllers/ # controllers for routes
 │   ├── models/ # Mongoose models (User, Story, ...)
@@ -126,4 +126,4 @@ travel/
         │   └── uploadImage.js # A utility for handling image uploads.
         ├── App.jsx # The root component of the React application.
         ├── index.css # Global CSS styles.
-        └── main.jsx # The entry point of the application, which renders the App component.
+        └── main.jsx # The entry point of the application, which renders the App component.```
