@@ -1,7 +1,7 @@
 TRAVEL STORIES APP
 
 A simple Travel Stories web application — React frontend + Node/Express backend + MongoDB.
-Users can register/login, create travel stories with images, search & filter stories, and mark favourites. Images are uploaded and served from /uploads.
+Users can register/login, create travel stories with images, search & filter stories, and mark favourites. Images are uploaded and served jusing Cloudinary
 
 __FEATURES__
 
