@@ -102,13 +102,13 @@ Filter stories (use query params). (routes/filterStory.routes.js)
 PROJECT FOLDER STRUCTURE
 
 ```travel/
-├── backend/ # server-side (Node/Express)
-│   ├── controllers/ # controllers for routes
-│   ├── models/ # Mongoose models (User, Story, ...)
-│   ├── routes/ # route definitions (auth, stories, upload)
-│   ├── middleware/ # auth, error handlers, multer config
-│   ├── config/ # cloudinary config, .env.example
-│   ├── utils/ # helper functions (Cloudinary helpers, validators)
+├── backend/ 
+│   ├── controllers/
+│   ├── models/ 
+│   ├── routes
+│   ├── middleware/
+│   ├── config/ 
+│   ├── utils/ 
 │   ├── package.json
 │   └── index.js
 └── travel-story-app/ # client-side (React)
@@ -120,10 +120,10 @@ PROJECT FOLDER STRUCTURE
         │   ├── Auth/
         │   └── Home/
         ├── utils/
-        │   ├── axiosInstance.js # An instance of the Axios library configured for making API requests.
-        │   ├── constants.js # Contains global constants used throughout the application.
-        │   ├── helper.js # Miscellaneous helper functions.
-        │   └── uploadImage.js # A utility for handling image uploads.
-        ├── App.jsx # The root component of the React application.
-        ├── index.css # Global CSS styles.
-        └── main.jsx # The entry point of the application, which renders the App component.```
+        │   ├── axiosInstance.js 
+        │   ├── constants.js 
+        │   ├── helper.js 
+        │   └── uploadImage.js 
+        ├── App.jsx
+        ├── index.css
+        └── main.jsx```
