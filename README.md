@@ -9,7 +9,7 @@ User registration & login
 
 Create / Read / Update / Delete travel stories
 
-Image upload & delete (uploads served from /uploads)
+Image upload & delete
 
 Search and filter stories
 
@@ -19,15 +19,15 @@ Static assets served from /assets
 
 Tech Stack
 
-Frontend: React (if travel-story-app/ is present)
+Frontend: React 
 
 Backend: Node.js, Express
 
 Database: MongoDB (Mongoose)
 
-Image storage: local /uploads and/or Cloudinary (check config)
+Image storage: local /uploads and/or Cloudinary 
 
-Authentication: JWT (verify in auth code if used)
+Authentication: JWT 
 
 Quick links
 
@@ -39,7 +39,7 @@ Static folders: /uploads, /assets
 
 Environment Variables
 
-Create a .env file in the project root. Common variables used by the project :
+Created a .env file in the project root. Common variables used by the project :
 
 MONGO_URI=your_mongodb_connection_string
 PORT=3000               
@@ -48,7 +48,7 @@ CLOUDINARY_CLOUD_NAME=...
 CLOUDINARY_API_KEY=...
 CLOUDINARY_API_SECRET=...
 
-API Routes (exact — as mounted in index.js)
+API Routes 
 
 These endpoints reflect how routes are mounted in index.js
 
