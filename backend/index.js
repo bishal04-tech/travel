@@ -58,6 +58,6 @@ app.use('/assets', express.static(path.join(__dirname, 'assets')));
 app.get('/', (req, res) => res.send('Welcome to the Travel API!'));
 app.post('/api/test', (req, res) => res.json({ message: 'Test API is working!' }));
 
-app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+app.listen(PORT,"0.0.0.0", () => console.log(`Server is running on port ${PORT}`));
 
 module.exports = app;
