@@ -25,7 +25,7 @@ const Login = () => {
      console.log('axiosInstance baseURL:', axiosInstance.defaults.baseURL);
 
        try {
-        const response = await axiosInstance.post('/api/login', {
+        const response = await axiosInstance.post('/login', {
           email:email,
           password:password,
         });

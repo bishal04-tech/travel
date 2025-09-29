@@ -40,8 +40,8 @@ mongoose
 // Mount auth routes under /api/auth
 app.use('/api/', authRoutes);
 // Mount login routes under /api/login
-app.use('/api/login', loginRoutes);
-app.use('/api/get', getRoutes);
+app.use('/login', loginRoutes);
+app.use('/get', getRoutes);
 app.use('/', addStoryRoutes);
 app.use('/',getAllStoriesRoutes);
 app.use('/', imageUploadRoutes);

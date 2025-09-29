@@ -39,7 +39,7 @@ const Home = () => {
   //get user info from local storage
   const getUserInfo=async()=>{
     try {
-      const response = await axiosInstance.get('/api/get')
+      const response = await axiosInstance.get('/get')
 
       if(response.data && response.data.user) {
         setUserInfo(response.data.user);
@@ -48,7 +48,7 @@ const Home = () => {
       if(error.response && error.response.status === 401) {
         // If unauthorized, redirect to login
         localStorage.clear();
-        navigate('/api/login');
+        navigate('/login');
       }
     }
   }
@@ -66,7 +66,7 @@ const Home = () => {
         if (error.response && error.response.status === 401) {
           // If unauthorized, redirect to login
           localStorage.clear();
-          navigate('/api/login');
+          navigate('/login');
         }
       }  
     }
