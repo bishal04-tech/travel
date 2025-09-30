@@ -46,15 +46,15 @@ These endpoints reflect how routes are mounted in index.js
 
 Auth & Login
 
-POST /api/create-account
+POST /signUp
 Create a new user account. (from routes/auth.routes.js mounted at /api/)
 
-POST /api/login
+POST /login
 Login (from routes/login.routes.js mounted at /api/login)
 
 Generic GET
 
-GET /api/get/
+GET /get/
 Generic GET route(s) from routes/get.routes.js (mounted at /api/get)
 
 Story CRUD
