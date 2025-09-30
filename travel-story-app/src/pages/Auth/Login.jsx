@@ -59,7 +59,7 @@ const Login = () => {
 
           <div>
             <h4 className='text-5xl textx-white font-semibold leading-[58px]'>
-             Capure Your <br/> Travel Stories
+             Capture Your <br/> Travel Stories
             </h4>
 
             <p className='text-[15px] text-gray leading-6 pr-7 mt-4'>
